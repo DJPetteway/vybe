@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react';
+import { FaCheck } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import './App.css'
 
