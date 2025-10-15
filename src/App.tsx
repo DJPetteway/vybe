@@ -130,7 +130,7 @@ export default function VybeWaitlist() {
           ) : (
             <div className="fade-in text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-500 rounded-3xl flex items-center justify-center mb-6 shadow-2xl shadow-green-500/50 mx-auto">
-                <Check className="w-10 h-10 text-white" strokeWidth={3} />
+                <FaCheck className="w-10 h-10 text-white" strokeWidth={3} />
               </div>
               
               <h2 className="text-5xl font-bold mb-4 text-slate-900">You're on the list</h2>
