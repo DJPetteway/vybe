@@ -163,29 +163,7 @@ export default function VybeWaitlist() {
           </div>
         </div>
       </footer>
-
-      <style jsx>{`
-        .fade-in {
-          animation: fadeIn 0.7s ease-out;
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .slide-in {
-          animation: slideIn 0.6s ease-out;
-        }
-        @keyframes slideIn {
-          0% {
-            opacity: 0;
-            transform: translateX(-20px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-      `}</style>
+      
     </div>
   );
 }
