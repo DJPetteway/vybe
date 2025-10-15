@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import './App.css'
 
 export default function VybeWaitlist() {
