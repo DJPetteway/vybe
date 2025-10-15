@@ -86,7 +86,7 @@ export default function VybeWaitlist() {
               
               <h2 className="text-5xl md:text-6xl font-bold leading-tight text-slate-900 mb-12">
                 You were early to<br/>
-                <span className="relative inline-block min-w-[300px] h-[1.2em] mt-2 mb-8">
+                <span className="relative inline-block min-w-[300px] h-[1.4em] mt-2 mb-8 overflow-visible">
                   <span 
                     key={currentWord}
                     className="absolute left-0 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent slide-in"
