@@ -105,6 +105,41 @@ export default function VybeWaitlist() {
                     className="absolute left-0 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent slide-in"
                   >
                     {rotatingWords[currentWord]}
-                 
-::contentReference[oaicite:28]{index=28}
+                  </span>
+                </span>
+              </h2>
 
+              <div className="flex gap-3">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-1 px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+                <button
+                  onClick={handleSubmit}
+                  className="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors"
+                >
+                  Join Waitlist
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div className="fade-in text-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-500 text-white mb-6">
+                <FaCheck size={24} />
+              </div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-4">
+                You're on the list!
+              </h2>
+              <p className="text-slate-700">
+                Your position in line: <span className="font-bold">{position}</span>
+              </p>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
