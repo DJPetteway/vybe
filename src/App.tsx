@@ -1,7 +1,6 @@
 import { FaCheck } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import './App.css';
-import { submitToWaitlist } from './utils/tallyApi';
 
 export default function VybeWaitlist() {
   const [email, setEmail] = useState('');
@@ -33,7 +32,7 @@ export default function VybeWaitlist() {
     if (!email || !email.includes('@')) return;
 
     try {
-      await submitToWaitlist(email);
+      console.log('Email submitted:', email);
     } catch (error) {
       console.error('Submission error:', error);
     }
